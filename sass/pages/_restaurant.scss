@@ -13,7 +13,6 @@
             margin-top: -150px;
             position: sticky;
             z-index: -1;
-
         }
 
         .child2{
@@ -45,8 +44,7 @@
                 
 
                 .menu_items
-                {
-                    
+                { 
                     @for $i from 2 through 5{
                         &:nth-child(#{$i}){
                             animation-delay: 500ms * $i;
