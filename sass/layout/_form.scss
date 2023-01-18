@@ -10,97 +10,111 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
-        .food_card {
-            
-            width: 20%;
+        flex-direction: column;
+        .colonne{
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            border-radius: 20px;
-            background-color: white;
-            margin-bottom: 30px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            text-decoration: none;
-            color: black;
+            justify-content: space-around;
 
-            img {
-                height: 200px;
-                border-radius: 20px 20px 0px 0px;
-                object-fit: cover;
-                width: 100%;
-            }
+            .food_card {
+                
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                border-radius: 20px;
+                background-color: white;
+                margin-bottom: 30px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                text-decoration: none;
+                color: black;
 
-                .card_order {
-                    display: flex;
-                    justify-content: end;
-
-                    img {
-                        height: 200px;
-                        border-radius: 20px 20px 0px 0px;
-                        object-fit: cover;
-                        width: 100%;
-                    }
-
-                    .new {
-                            position: absolute;
-                            background: #99e2d0;
-                            color: #008766;
-                            display: flex;
-                            padding: 10px;
-                            border-radius: 2px;
-                            margin-right: 20px;
-                    }
+                img {
+                    height: 200px;
+                    border-radius: 20px 20px 0px 0px;
+                    object-fit: cover;
+                    width: 100%;
                 }
 
-                .text_heart {
-                    display: flex;
-                    justify-content: space-between;
-
-                    .food_heart {
+                    .card_order {
                         display: flex;
-                        align-items: center;
-                        margin-right: 30px;
-                        font-size: 20px;
-                        .rempli
-                        {
-                            position: absolute;
-                            opacity: 0;
-                            color: #FF79DA;
-                            filter: brightness(75%);
-                            transition: all 1s ease-in-out;
-                            
+                        justify-content: end;
+
+                        img {
+                            height: 200px;
+                            border-radius: 20px 20px 0px 0px;
+                            object-fit: cover;
+                            width: 100%;
                         }
-                        &:hover{
-                            .rempli{
-                            opacity: 1;
-                            transform: scale(1.2);
-                            }
-                            
-                            
+
+                        .new {
+                                position: absolute;
+                                background: #99e2d0;
+                                color: #008766;
+                                display: flex;
+                                padding: 10px;
+                                border-radius: 2px;
+                                margin-right: 20px;
                         }
                     }
 
-                    .food_text {
-                        margin-left: 20px;
-                        .text-bold{
-                            @include Roboto;
-                            @include textebold;
+                    .text_heart {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .food_heart {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 30px;
                             font-size: 20px;
+                            .rempli
+                            {
+                                position: absolute;
+                                opacity: 0;
+                                color: #FF79DA;
+                                filter: brightness(75%);
+                                transition: all 1s ease-in-out;
+                                
+                            }
+                            &:hover{
+                                .rempli{
+                                opacity: 1;
+                                transform: scale(1.2);
+                                }
+                                
+                                
+                            }
+                        }
+
+                        .food_text {
+                            margin-left: 20px;
+                            .text-bold{
+                                @include Roboto;
+                                @include textebold;
+                                font-size: 20px;
+                            }
                         }
                     }
-                }
-        
+            
+            }
         }
         @media screen and (max-width: 992px) {
-
+            .colonne{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
             .food_card {
-                width: 45%;
+                width: 40%;
             }
         }
+        }
         @media screen and (max-width: 768px) {
-
+            .colonne{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
             .food_card {
                 width: 100%;
+            }
             }
         }
 
