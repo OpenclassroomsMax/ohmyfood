@@ -411,7 +411,7 @@ body {
   justify-content: space-evenly;
 }
 .menu .plat .food_card {
-  width: 45%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -477,6 +477,11 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+@media screen and (max-width: 992px) {
+  .menu .plat .food_card {
+    width: 45%;
+  }
+}
 @media screen and (max-width: 768px) {
   .menu .plat .food_card {
     width: 100%;
@@ -502,6 +507,15 @@ footer p {
 }
 footer i {
   color: white;
+}
+footer .list_footer {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  footer .list_footer {
+    flex-direction: column;
+  }
 }
 
 .footer_title {
@@ -667,7 +681,7 @@ footer i {
   padding-bottom: 5px;
   width: 5%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .azer .parents .child2 .repas {
     flex-direction: column;
   }

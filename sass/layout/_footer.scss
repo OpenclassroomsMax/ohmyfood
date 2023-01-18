@@ -21,6 +21,19 @@ footer {
     i{
     color: white;
     }
+    .list_footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    @media screen and (max-width: 768px) {
+
+        .list_footer {
+            
+            flex-direction: column;
+            
+        }
+        
+    }
 }
 
 .footer_title {
