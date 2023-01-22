@@ -1,6 +1,6 @@
 @import"../utils/mixins";
 
-.section__background {
+.header {
     background-color: #f7f7f7;
     h1{
       @include Roboto;
@@ -8,12 +8,12 @@
     }
     
 
-  .testimage {
+  .image {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     
-    .largeur {
+    .width {
       width: 90%;
       display: flex;
       justify-content: center;

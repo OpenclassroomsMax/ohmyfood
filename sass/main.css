@@ -97,11 +97,11 @@ body {
     transform: rotate(360deg);
   }
 }
-.explor {
+.button_explor {
   display: flex;
   justify-content: center;
 }
-.explor button {
+.button_explor button {
   border: none;
   border-radius: 25px;
   height: 50px;
@@ -117,18 +117,19 @@ body {
   width: 300px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  font-family: "Roboto", sans-serif;
   transition: all 1s ease-in-out;
 }
-.explor button:hover {
+.button_explor button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.check {
+.button_order {
   display: flex;
   justify-content: center;
   margin-bottom: 200px;
 }
-.check button {
+.button_order button {
   border: none;
   border-radius: 25px;
   height: 50px;
@@ -146,7 +147,7 @@ body {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   transition: all 1s ease-in-out;
 }
-.check button:hover {
+.button_order button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -154,20 +155,20 @@ body {
   margin-left: 20px;
 }
 
-.all_fonction_button {
+.all_function_button {
   line-height: 4;
   display: flex;
   /* flex-direction: column; */
   /* align-items: center; */
   justify-content: space-around;
 }
-.all_fonction_button .index {
+.all_function_button .function_order {
   display: flex;
   align-items: center;
   width: 30%;
   margin-bottom: 20px;
 }
-.all_fonction_button .index .fonction_button {
+.all_function_button .function_order .function_button {
   width: 100%;
   border: 2px solid #f7f7f7;
   border-radius: 25px;
@@ -183,17 +184,17 @@ body {
   font-family: "Roboto", sans-serif;
   /* margin-bottom: 30px; */
 }
-.all_fonction_button .index .fonction_button i {
+.all_function_button .function_order .function_button i {
   margin-right: 10px;
   color: gray;
 }
-.all_fonction_button .index .fonction_button:hover {
+.all_function_button .function_order .function_button:hover {
   background-color: rgb(248, 238, 248);
 }
-.all_fonction_button .index .fonction_button:hover i {
+.all_function_button .function_order .function_button:hover i {
   color: #9356dc;
 }
-.all_fonction_button .index .ptest {
+.all_function_button .function_order .numbers {
   color: white;
   /* border: solid; */
   /* margin: 10px; */
@@ -212,13 +213,13 @@ body {
   position: sticky;
 }
 @media screen and (max-width: 768px) {
-  .all_fonction_button .index {
+  .all_function_button .function_order {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .all_fonction_button {
+  .all_function_button {
     flex-direction: column;
     align-items: center;
   }
@@ -289,38 +290,38 @@ body {
           animation: rotation 1s linear infinite;
 }
 
-.section__background {
+.header {
   background-color: #f7f7f7;
 }
-.section__background h1 {
+.header h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-.section__background .testimage {
+.header .image {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.section__background .testimage .largeur {
+.header .image .width {
   width: 90%;
   display: flex;
   justify-content: center;
 }
-.section__background .testimage .largeur img {
+.header .image .width img {
   height: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.section__background .arrow_click {
+.header .arrow_click {
   text-decoration: none;
   color: black;
   display: flex;
   justify-content: flex-start;
 }
-.section__background .arrow_click .arrow__size {
+.header .arrow_click .arrow__size {
   font-size: 30px;
 }
-.section__background .map_bar {
+.header .map_bar {
   width: 100%;
   display: flex;
   align-items: center;
@@ -328,31 +329,31 @@ body {
   background-color: #eaeaea;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
-.section__background .map_bar input {
+.header .map_bar input {
   height: 40px;
   text-align: center;
   border: none;
   /* box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset; */
   background: transparent;
 }
-.section__background .map_bar input::-moz-placeholder {
+.header .map_bar input::-moz-placeholder {
   color: black;
   font-weight: bold;
 }
-.section__background .map_bar input:-ms-input-placeholder {
+.header .map_bar input:-ms-input-placeholder {
   color: black;
   font-weight: bold;
 }
-.section__background .map_bar input::placeholder {
+.header .map_bar input::placeholder {
   color: black;
   font-weight: bold;
 }
-.section__background .big_title {
+.header .big_title {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
 }
-.section__background .sub_title {
+.header .sub_title {
   text-align: center;
   color: gray;
   font-family: "Roboto", sans-serif;
@@ -404,18 +405,18 @@ body {
   background-color: #f7f7f7;
   padding: 20px;
 }
-.menu .plat {
+.menu .course {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: column;
 }
-.menu .plat .colonne {
+.menu .course .column {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.menu .plat .colonne .food_card {
+.menu .course .column .food_card {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -426,25 +427,25 @@ body {
   text-decoration: none;
   color: black;
 }
-.menu .plat .colonne .food_card img {
+.menu .course .column .food_card img {
   height: 200px;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-.menu .plat .colonne .food_card .card_order {
+.menu .course .column .food_card .card_order {
   display: flex;
   justify-content: end;
 }
-.menu .plat .colonne .food_card .card_order img {
+.menu .course .column .food_card .card_order img {
   height: 200px;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-.menu .plat .colonne .food_card .card_order .new {
+.menu .course .column .food_card .card_order .new {
   position: absolute;
   background: #99e2d0;
   color: #008766;
@@ -453,52 +454,53 @@ body {
   border-radius: 2px;
   margin-right: 20px;
 }
-.menu .plat .colonne .food_card .text_heart {
+.menu .course .column .food_card .text_heart {
   display: flex;
   justify-content: space-between;
 }
-.menu .plat .colonne .food_card .text_heart .food_heart {
+.menu .course .column .food_card .text_heart .food_heart {
   display: flex;
   align-items: center;
   margin-right: 30px;
   font-size: 20px;
 }
-.menu .plat .colonne .food_card .text_heart .food_heart .rempli {
+.menu .course .column .food_card .text_heart .food_heart .full {
   position: absolute;
   opacity: 0;
   color: #FF79DA;
   filter: brightness(75%);
   transition: all 1s ease-in-out;
 }
-.menu .plat .colonne .food_card .text_heart .food_heart:hover .rempli {
+.menu .course .column .food_card .text_heart .food_heart:hover .full {
   opacity: 1;
   transform: scale(1.2);
 }
-.menu .plat .colonne .food_card .text_heart .food_text {
+.menu .course .column .food_card .text_heart .food_text {
   margin-left: 20px;
+  font-family: "Roboto", sans-serif;
 }
-.menu .plat .colonne .food_card .text_heart .food_text .text-bold {
+.menu .course .column .food_card .text_heart .food_text .text-bold {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 @media screen and (max-width: 992px) {
-  .menu .plat .colonne {
+  .menu .course .column {
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
-  .menu .plat .colonne .food_card {
+  .menu .course .column .food_card {
     width: 40%;
   }
 }
 @media screen and (max-width: 768px) {
-  .menu .plat .colonne {
+  .menu .course .column {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
-  .menu .plat .colonne .food_card {
+  .menu .course .column .food_card {
     width: 100%;
   }
 }
@@ -549,7 +551,7 @@ footer .list_footer {
   margin-left: 5px;
 }
 
-.azer .parents .child1 img {
+.restaurant_menu .banner img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -559,7 +561,7 @@ footer .list_footer {
   position: sticky;
   z-index: -1;
 }
-.azer .parents .child2 {
+.restaurant_menu .all_menu {
   margin-top: -150px;
   position: -webkit-sticky;
   position: sticky;
@@ -568,23 +570,23 @@ footer .list_footer {
   background: #f7f7f7;
   border-radius: 50px 50px 0px 0px;
 }
-.azer .parents .child2 h1 {
+.restaurant_menu .all_menu h1 {
   font-family: "Shrikhand", cursive;
 }
-.azer .parents .child2 .repas {
+.restaurant_menu .all_menu .repast {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.azer .parents .child2 .repas p {
+.restaurant_menu .all_menu .repast p {
   font-family: "Roboto", sans-serif;
 }
-.azer .parents .child2 .repas .list {
+.restaurant_menu .all_menu .repast .list {
   display: flex;
   flex-direction: column;
   width: 30%;
 }
-.azer .parents .child2 .repas .menu_items {
+.restaurant_menu .all_menu .repast .menu_items {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -598,49 +600,49 @@ footer .list_footer {
   -webkit-animation: appear 3s;
           animation: appear 3s;
 }
-.azer .parents .child2 .repas .menu_items:nth-child(2) {
+.restaurant_menu .all_menu .repast .menu_items:nth-child(2) {
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
-.azer .parents .child2 .repas .menu_items:nth-child(3) {
+.restaurant_menu .all_menu .repast .menu_items:nth-child(3) {
   -webkit-animation-delay: 1500ms;
           animation-delay: 1500ms;
 }
-.azer .parents .child2 .repas .menu_items:nth-child(4) {
+.restaurant_menu .all_menu .repast .menu_items:nth-child(4) {
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
 }
-.azer .parents .child2 .repas .menu_items:nth-child(5) {
+.restaurant_menu .all_menu .repast .menu_items:nth-child(5) {
   -webkit-animation-delay: 2500ms;
           animation-delay: 2500ms;
 }
-.azer .parents .child2 .repas .menu_items .text_heart {
+.restaurant_menu .all_menu .repast .menu_items .text_heart {
   display: flex;
   justify-content: space-between;
 }
-.azer .parents .child2 .repas .menu_items .text_heart .price {
+.restaurant_menu .all_menu .repast .menu_items .text_heart .price {
   display: flex;
   align-items: end;
   text-overflow: ellipsis;
   padding-right: 20px;
   font-weight: bold;
 }
-.azer .parents .child2 .repas .menu_items .text_heart .food_text {
+.restaurant_menu .all_menu .repast .menu_items .text_heart .food_text {
   margin-left: 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 90%;
 }
-.azer .parents .child2 .repas .menu_items .text_heart .food_text .text-bold {
+.restaurant_menu .all_menu .repast .menu_items .text_heart .food_text .text-bold {
   font-weight: bold;
   font-size: 20px;
 }
-.azer .parents .child2 .repas .menu_items .text_heart .food_text p {
+.restaurant_menu .all_menu .repast .menu_items .text_heart .food_text p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.azer .parents .child2 .repas .menu_items .text_heart .menu_icone {
+.restaurant_menu .all_menu .repast .menu_items .text_heart .menu_icone {
   display: none;
   align-items: center;
   width: 15%;
@@ -650,33 +652,33 @@ footer .list_footer {
   color: transparent;
   justify-content: center;
 }
-.azer .parents .child2 .repas .menu_items .text_heart .menu_icone i {
+.restaurant_menu .all_menu .repast .menu_items .text_heart .menu_icone i {
   padding: 5px;
   background-color: white;
   border-radius: 2rem;
   color: #99E2D0;
   font-size: 30px;
 }
-.azer .parents .child2 .repas .menu_items:hover .menu_icone {
+.restaurant_menu .all_menu .repast .menu_items:hover .menu_icone {
   display: flex;
 }
-.azer .parents .child2 .repas .menu_items:hover i {
+.restaurant_menu .all_menu .repast .menu_items:hover i {
   -webkit-animation: spin 1s ease;
           animation: spin 1s ease;
 }
-.azer .parents .child2 .title--order {
+.restaurant_menu .all_menu .title--order {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.azer .parents .child2 .title--order .ok {
+.restaurant_menu .all_menu .title--order .heart {
   display: flex;
 }
-.azer .parents .child2 .title--order .ok .heart_home {
+.restaurant_menu .all_menu .title--order .heart .heart_home {
   font-size: 30px;
   margin-right: 30px;
 }
-.azer .parents .child2 .title--order .ok .rempli {
+.restaurant_menu .all_menu .title--order .heart .full {
   font-size: 30px;
   position: absolute;
   opacity: 0;
@@ -684,24 +686,24 @@ footer .list_footer {
   filter: brightness(75%);
   transition: all 200ms ease-in-out;
 }
-.azer .parents .child2 .title--order .ok:hover .rempli {
+.restaurant_menu .all_menu .title--order .heart:hover .full {
   opacity: 1;
   transform: scale(1.2);
 }
-.azer .parents .child2 .title--order .food_text {
+.restaurant_menu .all_menu .title--order .food_text {
   margin-left: 20px;
 }
-.azer .parents .child2 .title_food_home {
+.restaurant_menu .all_menu .title_food_home {
   border-bottom: 3px solid;
   border-color: #99e2d0;
   padding-bottom: 5px;
   width: 5%;
 }
 @media screen and (max-width: 992px) {
-  .azer .parents .child2 .repas {
+  .restaurant_menu .all_menu .repast {
     flex-direction: column;
   }
-  .azer .parents .child2 .repas .list {
+  .restaurant_menu .all_menu .repast .list {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

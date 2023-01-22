@@ -6,12 +6,12 @@
     background-color: #f7f7f7;
     padding: 20px;
 
-    .plat {
+    .course {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         flex-direction: column;
-        .colonne{
+        .column{
             width: 100%;
             display: flex;
             justify-content: space-around;
@@ -66,7 +66,7 @@
                             align-items: center;
                             margin-right: 30px;
                             font-size: 20px;
-                            .rempli
+                            .full
                             {
                                 position: absolute;
                                 opacity: 0;
@@ -76,7 +76,7 @@
                                 
                             }
                             &:hover{
-                                .rempli{
+                                .full{
                                 opacity: 1;
                                 transform: scale(1.2);
                                 }
@@ -87,6 +87,7 @@
 
                         .food_text {
                             margin-left: 20px;
+                            @include Roboto;
                             .text-bold{
                                 @include Roboto;
                                 @include textebold;
@@ -98,7 +99,7 @@
             }
         }
         @media screen and (max-width: 992px) {
-            .colonne{
+            .column{
             width: 100%;
             display: flex;
             justify-content: space-around;
@@ -108,7 +109,7 @@
         }
         }
         @media screen and (max-width: 768px) {
-            .colonne{
+            .column{
                 display: flex;
                 width: 100%;
                 flex-direction: column;

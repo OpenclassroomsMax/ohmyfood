@@ -1,11 +1,10 @@
 @import"../base/typography";
 @import"../utils/mixins";
-.azer
+.restaurant_menu
 {
-    .parents
-    {
+    
 
-        .child1 img
+        .banner img
         {
             width: 100%;
             object-fit: cover;
@@ -15,7 +14,7 @@
             z-index: -1;
         }
 
-        .child2{
+        .all_menu{
             margin-top: -150px;
             position: sticky;
             padding: 20px;
@@ -27,7 +26,7 @@
                 
             }
 
-            .repas {
+            .repast {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 30px;
@@ -131,7 +130,7 @@
                 justify-content: space-between;
 
 
-                .ok {
+                .heart {
                     display: flex;
 
                     .heart_home {
@@ -139,7 +138,7 @@
                         margin-right: 30px;
                     }
 
-                    .rempli
+                    .full
                     {
                         font-size: 30px;
                         position: absolute;
@@ -148,7 +147,7 @@
                         filter: brightness(75%);
                         transition: all 200ms ease-in-out;
                     }
-                    &:hover .rempli{
+                    &:hover .full{
                         opacity: 1;
                         transform: scale(1.2);
                             
@@ -173,7 +172,7 @@
 
             @media screen and (max-width: 992px) {
                 
-                .repas
+                .repast
                 {
                     flex-direction: column ;
                     .list {
@@ -186,5 +185,4 @@
 
         }
 
-    }
 }
